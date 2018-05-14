@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+build-app
+phantomjs --webdriver=4444 > /dev/null 2>/dev/null &
+bin/console doctrine:schema:create -q
+bin/console doctrine:fixtures:load --no-interaction
+bin/phpunit --configuration=phpunit.xml --coverage-text --colors=never

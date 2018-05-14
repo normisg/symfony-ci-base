@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+composer install
+npm install
+./node_modules/.bin/encore production

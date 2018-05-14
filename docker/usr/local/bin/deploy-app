@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+build-app
+bin/console doctrine:migrations:migrate --no-interaction
+bin/console assets:install
+bin/console cache:clear
+bin/console cache:warmup
