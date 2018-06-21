@@ -42,6 +42,7 @@ RUN apt-get update \
         php${PHP_VERSION}-sqlite3 \
         php${PHP_VERSION}-xml \
         php${PHP_VERSION}-zip \
+        php-amqp \
         php-apcu \
         php-apcu-bc \
         php-xml \
