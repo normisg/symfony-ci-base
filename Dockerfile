@@ -13,6 +13,7 @@ RUN apt-get update \
         curl \
         g++ \
         gcc \
+        git \
         gnupg1 \
         lsb-release \
         make \
